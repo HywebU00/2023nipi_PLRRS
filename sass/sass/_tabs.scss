@@ -1,0 +1,110 @@
+.tabSet {
+    max-width: 100%;
+    margin: .5em auto;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .8);
+    box-shadow: 0 0 8px 1px #dad6d1;
+    @extend %clearfix;
+    @include screen('mobile') {
+        width: auto;
+        height: auto !important;
+    }
+}
+.tabs {
+    position: relative;
+    &>.tabItem {
+        &.active>a {
+            background-color: $primaryColor;
+            color: #FFF;
+            &:hover{
+              background: lighten($primaryColor,5);  
+          }
+      }
+      float: left;
+      margin: 0;
+      padding: 0;
+      font-size:1em;
+      line-height: 1;
+      @include screen('mobile') {
+        float: none;
+        &>a {
+            width: 100% !important;
+            border-bottom: 1px solid #888;
+        }
+        &.active>a {
+            border-color: #bbb;
+        }
+    }
+    &>a {
+        display: block;
+        padding: 16px 0 14px;
+        text-align: center;
+        background-color: #a09489;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        @include text-overflow;
+        @include box-sizing;
+        &:hover {
+            background: darken(#a09489,8);
+        }
+    }
+}
+}
+//多組 可設定差異
+.example-2 {
+    .tabItem>a:hover {
+        background: $secondaryColor;
+    }
+    .tabItem.active>a {
+        background: $secondaryColor;
+    }
+}
+// 顯示content
+.active+.tabContent {
+    display: block;
+}
+.tabContent {
+    position: absolute;
+    top: 80px!important;
+    left: 0;
+    right: 0;
+    clear: both;
+    padding: 0px 20px;
+    display: none;
+    @include screen('mobile') {
+        position: static;
+        padding: .2em 6px 1em;
+        font-size: .938em;
+    }
+    ul {
+        @include li-reset;
+        li {
+            margin: 0 0 1.3em 0;
+            padding: 0;
+            line-height: 1.6;
+            border-bottom: 1px #CCC dashed;
+            @include screen('mobile') {
+                @include text-overflow();
+            }
+            a {
+                @include aSetting_nocolor;
+                background: url('../images/tablibg.png')no-repeat .3em .6em;
+                background-size: 3px auto;
+                padding-left: 1em;
+                display: block;
+                color:#ed6658;
+                &:hover{
+                    color:$aColor;
+                }
+            }
+            time {
+                display: inline-block;
+                margin: 0 0 0 1em;
+                font-size: .813em;
+                color: #666;
+            }
+        }
+    }
+
+}
