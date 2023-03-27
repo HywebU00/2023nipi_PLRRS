@@ -9,8 +9,8 @@
 }
 // 首頁輪播
 .mpSlider {
-    width: 100%!important;
-    margin: 200px auto 20px!important;
+    width: 70%!important;
+    margin: 190px auto 20px!important;
     position: relative;
     z-index:9;
     padding-bottom: 2em!important;
@@ -29,9 +29,10 @@
         background: url('../images/mpSliderbg.png')repeat-x left bottom;
     }
     .img-container {
-        @include aspect-ratio(5, 2);
+        @include aspect-ratio(16, 9);
     }
     @include screen('mobile') {
+        width: 80%!important;
         margin: 30px auto 20px!important;
     }
     a{
@@ -114,21 +115,21 @@
 .block1 {
     background: #d9cfc6 url('../images/mainbg.jpg')no-repeat center top;
     background-size: 100% auto;
-    height: 690px;
+    height: 520px;
     position: relative;    
     @media screen and (max-width: 1024px) {
-        height: 620px;
+        height: 470px;
     }
 
     @include screen('tablet') {
-        height: 580px;
+        height: 400px;
         background-size: cover;       
 
 
     }
     @include screen('mobile') {
         padding-top:60px;
-        height: 420px;
+        height: 270px;
     }
     &:after {
         content: "";
