@@ -162,7 +162,7 @@
         margin-bottom: .5em;
         box-sizing:border-box;
         @include screen('tablet') {
-            top:20px;
+            top:25px;
         }
         ul {
             // float: right;
@@ -192,12 +192,12 @@
             &.gohome{
                 margin: -.4em 1em 0;
                 a{
-                 font-size: 0;
-                 width: 40px;
-                 height: 40px;
-                 background: url('../images/icon_home.png')no-repeat center top;
-                 background-size: 40px auto;
-                 &:hover, &:focus{
+                   font-size: 0;
+                   width: 40px;
+                   height: 40px;
+                   background: url('../images/icon_home.png')no-repeat center top;
+                   background-size: 40px auto;
+                   &:hover, &:focus{
                     background: url('../images/icon_home_ov.png')no-repeat center top;
                     background-size: 38px auto;
                 }             
