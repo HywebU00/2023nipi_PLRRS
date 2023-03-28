@@ -9,55 +9,55 @@
 }
 // 首頁輪播
 .mpSlider {
-    width: 70%!important;
+    width: 50%!important;
     margin: 190px auto 20px!important;
     position: relative;
     z-index:9;
     padding-bottom: 2em!important;
     @include gutter(0);
-    &:before{
-        content: '';
-        width: 100%;
-        height: 19px;
-        margin:  8px auto;
-        position: absolute;
-        z-index:2;
-        // top: 0;
-        left: 0;
-        right: 0;
-        bottom: 5px;
-        background: url('../images/mpSliderbg.png')repeat-x left bottom;
-    }
-    .img-container {
-        @include aspect-ratio(16, 9);
-    }
+    // &:before{
+        // content: '';
+        // width: 100%;
+        // height: 19px;
+        // margin:  8px auto;
+        // position: absolute;
+        // z-index:2;
+        // // top: 0;
+        // left: 0;
+        // right: 0;
+        // bottom: 5px;
+        // background: url('../images/mpSliderbg.png')repeat-x left bottom;
+    // }
+    // .img-container {
+    //     @include aspect-ratio(16, 9);
+    // }
     @include screen('mobile') {
         width: 80%!important;
         margin: 30px auto 20px!important;
     }
     a{
-      &:before {
-        // content: '';
-        // width: 98%;
-        // height: 94%;
-        // margin:  8px auto;
-        // position: absolute;
-        // z-index:2;
-        // top: 0;
-        // left: 0;
-        // right: 0;
-        // bottom: 0;
-        // border: 1px solid transparent;
-        // border-width: 1px;
-        // border-image: linear-gradient(to bottom, #fff, #ccc);
-        // border-image-slice: 1;
-        @include screen('mobile') {
-            display: none;
-        }
-    } 
+        &:before {
+            // content: '';
+            // width: 98%;
+            // height: 94%;
+            // margin:  8px auto;
+            // position: absolute;
+            // z-index:2;
+            // top: 0;
+            // left: 0;
+            // right: 0;
+            // bottom: 0;
+            // border: 1px solid transparent;
+            // border-width: 1px;
+            // border-image: linear-gradient(to bottom, #fff, #ccc);
+            // border-image-slice: 1;
+            @include screen('mobile') {
+                display: none;
+            }
+        } 
 
-}
-.slick-prev, .slick-next {display: none!important;}
+    }
+    .slick-prev, .slick-next {display: none!important;}
 
 }
 // 廣告輪播
@@ -73,16 +73,16 @@
         background-size: 60%;
         left: 5px!important;
         @include screen('mobile') {
-         left: -8px!important; 
-     }
- }
- .slick-next {
+           left: -8px!important; 
+       }
+   }
+   .slick-next {
     background: url(../vendor/slick/icon_arrow_right_inverse.png) no-repeat center center;
     background-size: 60%;
     right: 5px!important;
     @include screen('mobile') {
-     right: -8px!important; 
- }
+       right: -8px!important; 
+   }
 }
 .img-container {
     width: 150px;
@@ -122,14 +122,14 @@
     }
 
     @include screen('tablet') {
-        height: 400px;
+        height: 415px;
         background-size: cover;       
 
 
     }
     @include screen('mobile') {
         padding-top:60px;
-        height: 270px;
+        height: 265px;
     }
     &:after {
         content: "";
@@ -427,10 +427,10 @@
         background-size: 50% auto;
         z-index: 0;
         @include screen('mobile') {
-         background: url('../images/block3_bg2s.png')no-repeat right top;
-         background-size: 50% auto; 
-     }
- }
+           background: url('../images/block3_bg2s.png')no-repeat right top;
+           background-size: 50% auto; 
+       }
+   }
 
 }
 .register{
@@ -536,8 +536,8 @@ dl{
     padding: 0;
     line-height: 1.6em;
     @include screen('mobile') {
-     margin:8px 0 0 0; 
- }
+       margin:8px 0 0 0; 
+   }
 }
 dt{
     float: left;
@@ -764,9 +764,9 @@ ul{
         @include gutter();
     }
     @include screen('tablet') {
-       padding: 2em 0; 
-   }
-   &:before {
+     padding: 2em 0; 
+ }
+ &:before {
     content: '';
     width: 100%;
     height:20px;
@@ -810,10 +810,10 @@ ul{
         white-space:nowrap;
 
         a{
-           color:$secondaryColor;
-           text-align: center;
+         color:$secondaryColor;
+         text-align: center;
 
-           &:hover{
+         &:hover{
             color:$primaryColor;
         }
     }
