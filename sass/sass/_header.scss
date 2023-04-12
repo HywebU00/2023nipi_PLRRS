@@ -162,7 +162,7 @@
         margin-bottom: .5em;
         box-sizing:border-box;
         @include screen('tablet') {
-            top:25px;
+            // top:25px;
         }
         ul {
             // float: right;
@@ -180,7 +180,7 @@
             margin: 0 .2em .1em;
             a {
                 display: inline-block;
-                padding: .5em .8em;
+                padding: .2em .8em;
                 text-decoration: none;
                 background:#5b043f;
                 color:#fff;
@@ -190,14 +190,14 @@
                 }
             }
             &.gohome{
-                margin: -.4em 1em 0;
+                margin: -.5em 1em 0;
                 a{
-                   font-size: 0;
-                   width: 40px;
-                   height: 40px;
-                   background: url('../images/icon_home.png')no-repeat center top;
-                   background-size: 40px auto;
-                   &:hover, &:focus{
+                 font-size: 0;
+                 width: 32px;
+                 height: 32px;
+                 background: url('../images/icon_home.png')no-repeat center top;
+                 background-size: 32px auto;
+                 &:hover, &:focus{
                     background: url('../images/icon_home_ov.png')no-repeat center top;
                     background-size: 38px auto;
                 }             

@@ -258,7 +258,7 @@
     }
     @include screen('mobile') {
         margin:30px 10px 20px 10px;
-        padding: 0em 2em 0em; 
+        padding: 0em 1em 0em; 
     }
 
     &:before {
@@ -435,7 +435,7 @@
 }
 .register{
     // min-height: 580px;
-    text-align: center;
+    // text-align: center;
     position: relative;
     z-index:9;
     // padding-bottom: 2em;
@@ -456,7 +456,7 @@
     h2{
         font-size: 1.5em;
         display: inline-block;
-        margin:0 auto;
+        margin:0 auto .25em;
         padding:0;
         border-bottom: solid 4px #eaa7a9;
         line-height: 1.6em;
@@ -472,23 +472,29 @@
             left: 0;
             background: #791e59;
         }
-
-    }
-    .box{
-        background: #fff;
-        box-shadow: 0 0 8px 1px #dad6d1;
-        text-align: left;
-        width:100%;
-        min-height: 140px;
-        margin:1.5em auto;
-        padding: 30px 40px;
-        position: relative;
         @include screen('tablet') {
-          width:90%;  
+            margin-left: 2em;
+        }
+        @include screen('xs_mobile') {
+          margin-left: 1em;  
       }
-      @include screen('mobile') {
-        padding: 30px 20px;
-    }
+
+  }
+  .box{
+    background: #fff;
+    box-shadow: 0 0 8px 1px #dad6d1;
+    text-align: left;
+    width:100%;
+    min-height: 140px;
+    margin:1.5em auto;
+    padding: 30px 40px;
+    position: relative;
+    @include screen('tablet') {
+      width:90%;  
+  }
+  @include screen('mobile') {
+    padding: 30px 20px;
+}
 
 }
 h3{
@@ -748,7 +754,7 @@ ul{
 
 .block5{
     position: relative;
-    padding: 1.5em 0 140px;
+    padding: 1em 0 60px;
     .leftbox{
         @include make-xs-column(12);
         @include make-sm-column(6);
@@ -764,31 +770,31 @@ ul{
         @include gutter();
     }
     @include screen('tablet') {
-     padding: 2em 0; 
- }
- &:before {
-    content: '';
-    width: 100%;
-    height:20px;
-    margin: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -1px;
-    background: url('../images/footer_topbg.png')repeat-x left top;
-    z-index: 99;
-}
-&:after {
-    content: '';
-    width: 320px;
+        padding: 1em 0 60px; 
+    }
+    &:before {
+        content: '';
+        width: 100%;
+        height:20px;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        background: url('../images/footer_topbg.png')repeat-x left top;
+        z-index: 99;
+    }
+    &:after {
+        content: '';
+        width: 200px;
         // height:160px;
         margin: auto;
         position: absolute;
         top: 0;
-        right: 10%;
+        right: 1%;
         bottom: -1em;
         background: url('../images/mpbook2.png')no-repeat center bottom;
-        background-size: auto 164px;
+        background-size: auto 100px;
         z-index: 99;
         @include screen('tablet') {
             display: none;
@@ -819,7 +825,7 @@ ul{
     }
 } 
 ul{
-    margin: 0 20%;
+    margin: 0 10%;
     padding: 0;
     list-style: none;
     text-align: center;
@@ -837,7 +843,7 @@ ul{
         @include gutter();
 
         img{
-            width: 80%;
+            width: 90px;
             border-radius: 50%;
             background: #fff;
             &:hover{
